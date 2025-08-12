@@ -1,3 +1,7 @@
+use followers::run;
+
 fn main() {
-    println!("Hello, world!");
+    if let Err(e) = run() {
+        println!("Error running script: {e:?}");
+    }
 }
